@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-color: rgb(214, 214, 214);
+}
+
+/*----------------NavBar----------------*/
+
+.NavBar ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.NavBar li {
+    float: left;
+}
+
+.NavBar li button {
+    background-color: #333;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+}
+
+.NavBar li button:hover {
+    background-color: #111;
+}
+
+.NavBar li:last-child {
+    float: right;
+}
+
+/*----------------Home Page----------------*/
+
+.Library{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.Book {
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    margin: 2rem;
+    background-color: rgb(163, 163, 163);
+}
+
+.Book:hover {
+    box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.5);
+}
+
+.Book img {
+    border-radius: 10px 10px 0px 0px;
+    height: 85%;
+    width: 100%;
+}
+
+.Book button {
+    border-radius: 0px 0px 10px 10px;
+    border: none;
+    padding: 12px;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.Book button:hover{
+    opacity: 0.7;
+}
+
+/*----------------Add Book Page----------------*/
+
+.addBooksToLibrary{
+    text-align: center;
+    font-size: 17px;
+    margin-top: 50px;
+}
+
+.addBooksToLibrary input{
+    border-radius: 10px;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box
+
+}
+
+.addBooksToLibrary button{
+    border-radius: 10px;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+
+}
+
+.addBooksToLibrary button:hover{
+    opacity: 0.7;
+}
+
+
+/*----------------Basket Page----------------*/
+
+
+.basket table{
+    float: left;
+}
+
+.basket table, th, td {
+    text-align: left;
+    border-bottom: 1px solid;
+    margin-top: 50px;
+    margin-left: 15%;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+.basket th{
+    font-size: 25px;
+    height: 20px;
+}
+
+.basket td{
+    height: 25%;
+}
+
+.basket img {
+    margin-left: 10%;
+    padding-top: 5px;
+    border-radius: 10px;
+    height: 200px;
+    width: 125px;
+}
+
+.basket tr:nth-child(even) {
+    background-color: rgb(163, 163, 163);
+}
+
+.basket p{
+    text-align: center;
+    color: white;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+
+}
+
+.product{
+    width: 25%;
+}
+
+.title{
+    font-size: 20px;
+
+}
+
+.basket button {
+    border-radius: 10px;
+    border: none;
+    padding: 12px;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    cursor: pointer;
+}
+
+.basket button:hover{
+    opacity: 0.8;
+}
+
+.prize_sum {
+    border-radius: 10px;
+    float: right;
+    width: 25;
+    background-color: rgb(163, 163, 163);
+    margin-top: 80px;
+    margin-right: 10%;
+    padding: 5px;
+}
+
+.prize_sum a:hover{
+    opacity: 0.8;
+}
+
+/*----------------Buy Section----------------*/
+
+
+.buy_section{
+    text-align: center;
+    font-size: 17px;
+    margin-top: 50px;
+}
+
+.buy_section input, textarea{
+    border-radius: 10px;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box
+
+}
+
+
+.buy_section select {
+    width: 50%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: rgb(163, 163, 163);
+    padding: 12px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box
+ }
+
+.buy_section button{
+    border-radius: 10px;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    color: white;
+    background-color: #333;
+
+}
+
+.buy_section button:hover{
+    opacity: 0.8;
+}

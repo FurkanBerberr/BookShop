@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="e-shopCss.css">
+    <script src="e-shopJs.js"></script>
+    <title>Buying Section</title>
+</head>
+<body>
+
+    <div class="buy_section">
+        <form>
+            <label>Name Surname:</label><br>
+            <input id="name" type="text" placeholder="Name Surname"><br>
+            <label>Address:</label><br>
+            <textarea id="address" cols="30" rows="10" placeholder="Neighborhood, Street (Avenue) No, Apt. Name, etc."></textarea><br>
+            <label>Country:</label><br>
+            <input id="country" type="text" placeholder="Country"><br>
+            <label>City:</label><br>
+            <input id="city" type="text" placeholder="City"><br>
+            <label>Payment Method:</label><br>
+            <select id="payment">
+                <option value="transfer">Wire Transfer</option>
+                <option value="card">Credit Card</option>
+            </select><br>
+            <button type="button" onclick="complete_payment()">Complete Payment</button>
+        </form>
+    </div>
+    
+    
+</body>
+</html>

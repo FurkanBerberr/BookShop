@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="e-shopCss.css">
+    <script src="e-shopJs.js"></script>
+    <title>LiBook</title>
+</head>
+<body>
+
+    <div class="NavBar">
+        <ul>
+            <li><button onclick="unhide_home_page()">Home</button></li>
+            <li><button onclick="hide_home_page()">Add Book</button></li>
+            <li><button onclick="visit_basket()">Basket</button></li>
+        </ul>
+    </div>
+
+    <div id="div2" class="Library">
+        <div class="Book">
+            <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.morkitaplik.com%2Fwp-content%2Fuploads%2F2014%2F01%2Fkurk-mantolu-madonna.jpg&f=1&nofb=1" alt="">
+            <h2>Kürk Mantolu Madonna</h2>
+            <p>25 TL</p>
+            <button id="b1" onclick="add_to_basket('b1')">Add to Card</button>
+        </div>
+
+        <div class="Book">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fkitapokupdfindir.com%2Fwp-content%2Fuploads%2F2020%2F11%2FYabanci-kitabini-PDF-indir-ePUB-PDF.jpeg&f=1&nofb=1" alt="">
+            <h2>Yabancı</h2>
+            <p>10 TL</p>
+            <button id="b2" onclick="add_to_basket('b2')">Add to Card</button>
+        </div>
+
+        <div class="Book">
+            <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.safakkitap.com.tr%2FUploads%2FUrunResimleri%2Fbuyuk%2Fcalikusu--dbd7.jpg&f=1&nofb=1" alt="">
+            <h2>Calıkuşu</h2>
+            <p>20 TL</p>
+            <button id="b3" onclick="add_to_basket('b3')">Add to Card</button>
+        </div>
+
+    </div>
+
+    <div class="addBooksToLibrary" style="display: none;">
+        <form>
+            <label>Img Link:</label><br>
+            <input id="imgLink" type="text" placeholder="Add Image Link"><br>
+            <label>Add Book Title:</label><br>
+            <input id="bookTitle" type="text" placeholder="Add Book Title"><br>
+            <label>Add price:</label><br>
+            <input id="price" type="number" placeholder="Add price"><br>
+            <button onclick="add_book()" type="button">Add Book</button>
+        </form>
+    </div>
+
+    <div class="basket" style="display: none;">
+        <table id="basket_table">
+            <tr>
+                <th class="product">Product</th>
+                <th>Book Title</th>
+                <th>Price</th>
+            </tr>
+        </table>
+        
+        <div class="prize_sum">
+            <h2 id="t_cost">Total Cost: 0 TL</h2>
+            <button onclick="unhide_home_page()">Continue Shoping</button>
+            <button onclick="buy_section()">Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
